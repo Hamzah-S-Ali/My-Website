@@ -1091,3 +1091,13 @@ img {
   width: 320px;  /* العرض المناسب */
   height: 420px; /* الطول لتناسب الصورة الشخصية الطولية */
 }
+/* إجبار كل صور قسم التعريف على أخذ خاصية الضبط الصحيحة */
+section#about img, 
+.about img, 
+div[class*="about"] img, 
+div[class*="profile"] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
